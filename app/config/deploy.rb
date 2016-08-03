@@ -21,8 +21,6 @@ set :deploy_via, :remote_cache # Només deployar els fitxers que han canviat
 
 default_run_options[:pty] = true
 
-set :symfony_console_path, "bin/console"
-
 set :keep_releases,  3
 
 set :ssh_options, { config: false, number_of_password_prompts: 0 } # Així ja no demana password per consola
@@ -41,9 +39,9 @@ puts "----------  READYUP: Begin deployment. ---------------"
 after "deploy", "deploy:cleanup" # borrem releases antigues
 
 # Canviar permissos de les carpetes var/cache i var/logs
-task :canviar_permissos do
-  puts "----------------- Canviat permissos app/cache i app/logs ---------------"
-  run "#{try_sudo} sudo chmod -R 777 #{release_path}/var/cache #{release_path}/var/logs"
-end
+#task :canviar_permissos do
+#  puts "----------------- Canviat permissos app/cache i app/logs ---------------"
+#  run "#{try_sudo} sudo chmod -R 777 #{release_path}/var/cache #{release_path}/var/logs"
+#end
 
-after "deploy", :canviar_permissos
+#after "deploy", :canviar_permissos
