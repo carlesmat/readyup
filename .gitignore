@@ -11,6 +11,7 @@
 
 # Parameters
 /app/config/parameters.yml
+/app/config/deploy.rb
 
 # Managed by Composer
 !var/SymfonyRequirements.php
