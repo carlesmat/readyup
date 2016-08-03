@@ -1,0 +1,30 @@
+# Cache and logs (Symfony3)
+/var/*
+/var/cache/*
+/var/logs/*
+!var/cache/.gitkeep
+!var/logs/.gitkeep
+
+# Sessions
+/var/sessions/*
+!var/sessions/.gitkeep
+
+# Parameters
+/app/config/parameters.yml
+
+# Managed by Composer
+!var/SymfonyRequirements.php
+/vendor/
+
+# Assets and user uploads
+/web/bundles/
+/web/uploads/
+
+# Build data
+/build/
+
+# Composer PHAR
+/composer.phar
+
+# PHPUnit
+/phpunit.xml

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>READYUP - {% block title %}{% endblock %}</title>
+        <link rel="icon" sizes="16x16" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        <div id="symfony-wrapper">
+
+            <div id="symfony-header">
+              {% block content_header %}
+                  <div style="clear: both"></div>
+              {% endblock %}
+            </div>
+
+            <div class="symfony-content">
+              {% block content %}
+              {% endblock %}
+            </div>
+
+        </div>
+    </body>
+</html>
