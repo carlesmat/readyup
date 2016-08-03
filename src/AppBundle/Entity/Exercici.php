@@ -11,11 +11,11 @@ use Doctrine\ORM\Mapping as ORM;
 class Exercici
 {
   /**
-   * @ORM\id
+   * @ORM\Id
    * @ORM\Column(type="integer")
    * @ORM\GeneratedValue(strategy="AUTO")
    */
-    private $id;
+    private $Id;
 
     /**
      * @ORM\Column(type="integer", name="id_exercici")
@@ -30,13 +30,13 @@ class Exercici
     private $sNom;
 
     /**
-     * Get id
+     * Get Id
      *
      * @return integer
      */
     public function getId()
     {
-        return $this->id;
+        return $this->Id;
     }
 
     /**
