@@ -1,0 +1,16 @@
+
+# This file is part of the RCHCapistranoBundle.
+#
+# (c) Robin Chalas <robin.chalas@gmail.com>
+#
+# For the full copyright and license information, please view the LICENSE
+# file that was distributed with this source code.
+
+
+domain: '81.184.164.165'
+user: 'vagrant'
+keys: '/home/vagrant/.ssh/id_rsa'
+forward_agent: false
+auth_methods: 'publickey password'
+deploy_to: '/var/www/html/readyup'
+repo_url: 'git@github.com:carlesmat/readyup.git'

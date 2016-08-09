@@ -29,3 +29,6 @@
 
 # PHPUnit
 /phpunit.xml
+
+# Capistrano
+/config/deploy/production.rb
