@@ -22,9 +22,15 @@ class DefaultController extends Controller
      */
     public function indexAction(Request $request)
     {
+        $oRepository = $this->getDoctrine()
+                            ->getRepository('AppBundle:Exercici');
+
+        $oExercicis = $oRepository->findAll();
+
         // replace this example code with whatever you need
         return $this->render('readyup.html.twig', [
             'base_dir' => realpath($this->getParameter('kernel.root_dir').'/..'),
+            'oExercicis' => $oExercicis,
         ]);
     }
 
