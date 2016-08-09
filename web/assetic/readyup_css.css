@@ -47,6 +47,7 @@ body {
         margin: 0 0 0 250px;
         padding: 0 30px;
         border-left: 1px solid #e7e7e7;
+        padding-top: 30px;
     }
     #page-wrapper2 {
         position: inherit;
@@ -396,6 +397,7 @@ a:hover.menu {
     color: #ff9900 !important;
     text-decoration: none;
 }
+
 /*!
  *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
