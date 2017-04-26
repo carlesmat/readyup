@@ -1,12 +1,4 @@
 app:
-    resource: "@AppBundle/Controller/"
-    type:     annotation
-
-#test:
-#    resource: "@AppBundle/Controller/"
-#    prefix: /test
-
-saveData:
-    path:      /save_data
-    defaults:  { _controller: AppBundle:Default:saveData }
-    methods:  [POST]
+    #resource: "@AppBundle/Controller/"
+    #type:     annotation
+    resource: '@AppBundle/Resources/config/routing.yml'

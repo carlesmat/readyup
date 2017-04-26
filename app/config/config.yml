@@ -31,6 +31,7 @@ framework:
     fragments:       ~
     http_method_override: true
     assets: ~
+    translator:  { fallback: "%locale%" }
 
 # Twig Configuration
 twig:
@@ -132,3 +133,14 @@ assetic:
             inputs:
                 - %kernel.root_dir%/Resources/public/fonts/fontawesome-webfont.woff
             output: "fonts/fontawesome-webfont.woff"
+
+sonata_admin:
+    title: 'READYUP'
+    title_logo: images/logo.png
+
+sonata_block:
+    default_contexts: [cms]
+    blocks:
+        # enable the SonataAdminBundle block
+        sonata.admin.block.admin_list:
+            contexts: [admin]

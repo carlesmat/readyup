@@ -28,7 +28,11 @@ class DefaultController extends Controller
         $oExercicis = $oRepository->findAll();
 
         // replace this example code with whatever you need
-        return $this->render('readyup.html.twig', [
+        /*return $this->render('readyup.html.twig', [
+            'base_dir' => realpath($this->getParameter('kernel.root_dir').'/..'),
+            'oExercicis' => $oExercicis,
+        ]);*/
+        return $this->render('readyup2.html.twig', [
             'base_dir' => realpath($this->getParameter('kernel.root_dir').'/..'),
             'oExercicis' => $oExercicis,
         ]);
