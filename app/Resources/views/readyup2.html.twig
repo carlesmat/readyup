@@ -1,0 +1,37 @@
+{% extends 'AvanzuAdminThemeBundle:layout:base-layout.html.twig' %}
+
+{% block title %}READYUP{% endblock %}
+
+{% block page_title %}Exercicis{% endblock %}
+
+{% block page_content %}
+
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover table-striped">
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Nom</th>
+            </tr>
+          </thead>
+        <tbody>
+          {% for oExercici in oExercicis %}
+            <tr>
+              <td>{{ oExercici.getIIdExercici }}</td>
+              <td>{{ oExercici.getSNom }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <!-- /.table-responsive -->
+  </div>
+  <!-- /.col-lg-4 (nested) -->
+  <!-- /.col-lg-8 (nested) -->
+</div>
+<!-- /.row -->
+{% endblock %}
+
+{% block avanzu_admin_footer %}{% endblock %}
